@@ -1,7 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #5B8C51;
+    --primary: #348E38;
     --secondary: #EDDD5E;
+    --tertiary: #2D2418;
     --light: #F7F7F7;
     --dark: #404A3D;
 }
@@ -25,7 +26,6 @@
 .fw-semi-bold {
     font-weight: 500 !important;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -55,7 +55,11 @@
 
 .btn-secondary,
 .btn-outline-secondary:hover {
-    color: var(--dark);
+    color: #ddd;
+}
+
+.bi-download {
+    padding-left: 10px;
 }
 
 .btn-square {
@@ -82,7 +86,6 @@
     justify-content: center;
     font-weight: normal;
 }
-
 
 /*** Navbar ***/
 .navbar.sticky-top {
@@ -144,6 +147,7 @@
 }
 
 
+
 /*** Header ***/
 .carousel-caption {
     top: 0;
@@ -156,6 +160,7 @@
     z-index: 1;
 }
 
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 15%;
@@ -166,8 +171,8 @@
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: var(--primary);
-    border: 10px solid var(--primary);
+    background-color: var(--tertiary);
+    border: 10px solid var(--tertiary);
 }
 
 @media (max-width: 768px) {
