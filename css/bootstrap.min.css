@@ -815,7 +815,8 @@ progress {
 
 .col-11 {
     flex: 0 0 auto;
-    width: 91.66667%
+    /* width: 91.66667% */
+    width: 100%;
 }
 
 .col-12 {
@@ -5158,7 +5159,7 @@ fieldset:disabled .btn {
     float: left;
     padding-right: .5rem;
     color: #6c757d;
-    content: var(--bs-breadcrumb-divider, "/")
+    content: var(--bs-breadcrumb-divider, "|")
         /* rtl: var(--bs-breadcrumb-divider, "/") */
 }
 
