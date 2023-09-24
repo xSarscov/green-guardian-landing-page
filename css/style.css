@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #348E38;
+    --primary: #88B44E;
     --secondary: #EDDD5E;
     --light: #F7F7F7;
     --dark: #404A3D;
@@ -93,7 +93,7 @@
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 35px;
+    margin-right: 30px;
     padding: 10px 0;
     color: var(--dark);
     font-size: 18px;
@@ -171,8 +171,8 @@
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: #0F4229;
-    border: 10px solid #0F4229;
+    background-color: #252c30;
+    border: 10px solid #252c30;
 }
 
 @media (max-width: 768px) {
@@ -208,6 +208,7 @@
 
 
 /*** Section Title ***/
+
 .section-title {
     position: relative;
     display: inline-block;
@@ -248,6 +249,35 @@
 }
 
 
+.separator {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.separator::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #88b44e;
+}
+
+.separator::after {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    bottom: -13px;
+    left: calc(50% - 13px);
+    background: var(--dark);
+    border: 10px solid #FFFFFF;
+    border-radius: 28px;
+    
+}
+
 /*** About ***/
 .about-experience {
     position: absolute;
@@ -263,6 +293,40 @@
 }
 
 .about-experience img {
+}
+
+/*** Products ***/
+.product {
+    background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(../img/product-bg.png) left bottom no-repeat;
+    background-size: auto;
+}
+
+.product-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.product-carousel .owl-nav .owl-prev,
+.product-carousel .owl-nav .owl-next {
+    margin: 0 10px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 55px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .15);
+    font-size: 25px;
+    transition: .5s;
+}
+
+.product-carousel .owl-nav .owl-prev:hover,
+.product-carousel .owl-nav .owl-next:hover {
+    background: #FFFFFF;
+    color: var(--primary);
 }
 
 /*** Service ***/
@@ -400,85 +464,46 @@
 
 
 /*** Testimonial ***/
-.testimonial-img {
-    position: relative;
-    min-height: 400px;
+.testimonial {
+    background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(../img/testimonial-bg.jpg) center center no-repeat;
+    background-size: cover;
 }
 
-.testimonial-img::after {
-    position: absolute;
-    content: "\f10d";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 200px;
-    color: #EEEEEE;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+.testimonial-item {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 30px solid var(--primary);
 }
 
-.testimonial-img img {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+.testimonial-item img {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 60px;
 }
 
-.testimonial-img img:nth-child(1) {
-    top: 0;
-    left: 0;
-}
-
-.testimonial-img img:nth-child(2) {
-    top: 60%;
-    left: 20%;
-}
-
-.testimonial-img img:nth-child(3) {
-    top: 20%;
-    left: 60%;
-}
-
-.testimonial-img img:nth-child(4) {
-    bottom: 0;
-    right: 0;
-}
-
-.testimonial-img img .animated.pulse {
-    animation-duration: 2s;
-}
-
-.testimonial-carousel .owl-item img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-}
-
-.testimonial-carousel .owl-nav {
-    margin-top: 30px;
+.testimonial-carousel .owl-dots {
+    margin-top: 35px;
     display: flex;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-    margin-right: 15px;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    color: var(--secondary);
-    border-radius: 45px;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
-    font-size: 22px;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--primary);
+    border-radius: 15px;
     transition: .5s;
 }
 
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--secondary);
-    color: var(--dark);
+.testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--dark);
 }
 
 
