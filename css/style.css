@@ -3,7 +3,7 @@
     --primary: #88B44E;
     --secondary: #EDDD5E;
     --light: #F7F7F7;
-    --dark: #404A3D;
+    --dark: #252c30;
 }
 
 .back-to-top {
@@ -144,6 +144,10 @@
         transition: .5s;
         opacity: 1;
     }
+
+    .navbar-collapse {
+        border-top: 1px solid #DDDDDD;
+    }
 }
 
 
@@ -171,8 +175,8 @@
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: #252c30;
-    border: 10px solid #252c30;
+    background-color: var(--dark);
+    border: 10px solid var(--dark);
 }
 
 @media (max-width: 768px) {
@@ -192,7 +196,7 @@
 }
 
 .page-header {
-    background: url(../img/banner.jpg) center center no-repeat;
+    background: url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -292,7 +296,9 @@
     background: #F0E276;
 }
 
-.about-experience img {
+.about {
+    background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(../img/testimonial-bg.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 /*** Products ***/
@@ -450,6 +456,11 @@
 
 
 /*** Team ***/
+.team {
+    background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(../img/product-bg.png) left bottom no-repeat;
+    background-size: auto;
+}
+
 .team-item {
     position: relative;
     text-align: center;
@@ -460,6 +471,7 @@
 .team-item .btn {
     border-color: transparent;
     box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+    transition: all .75s;
 }
 
 
@@ -506,19 +518,21 @@
     background: var(--dark);
 }
 
+/*** Download ***/
+.download {
+    background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(../img/product-bg.png) left bottom no-repeat;
+}
+
 
 /*** Footer ***/
-.footer {
-    color: #B0B9AE;
-}
 
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #B0B9AE;
     font-weight: normal;
+    color: #252c30;
     text-transform: capitalize;
     transition: .3s;
 }

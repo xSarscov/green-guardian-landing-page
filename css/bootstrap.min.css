@@ -3053,7 +3053,7 @@ textarea.form-control.is-invalid {
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
-    color: #777;
+    color: #252525;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -3073,7 +3073,8 @@ textarea.form-control.is-invalid {
 }
 
 .btn:hover {
-    color: #777
+    color: #EDDD5E;
+    background: #252525;
 }
 
 .btn:disabled,
@@ -3084,15 +3085,15 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #252c30;
-    border-color: #252c30;
+    color: #000;
+    background-color: #88b44e;
+    border-color: #88b44e;
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #0F4229;
-    border-color: #0F4229
+    color: #88b44e;
+    background-color: #fff;
+    border-color: #88b44e
 }
 
 .btn-check:focus+.btn-primary,
