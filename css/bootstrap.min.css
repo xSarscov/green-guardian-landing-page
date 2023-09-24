@@ -3096,15 +3096,15 @@ fieldset:disabled .btn {
     border-color: #88b44e
 }
 
-.btn-check:focus+.btn-primary,
+/* .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #000;
     background-color: #749d6b;
     border-color: #6b9862;
     box-shadow: 0 0 0 .25rem rgba(77, 119, 69, 0.5)
-}
+} */
 
-.btn-check:checked+.btn-primary,
+/* .btn-check:checked+.btn-primary,
 .btn-check:active+.btn-primary,
 .btn-primary:active,
 .btn-primary.active,
@@ -3112,15 +3112,15 @@ fieldset:disabled .btn {
     color: #000;
     background-color: #7ca374;
     border-color: #6b9862
-}
+} */
 
-.btn-check:checked+.btn-primary:focus,
+/* .btn-check:checked+.btn-primary:focus,
 .btn-check:active+.btn-primary:focus,
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 .25rem rgba(77, 119, 69, 0.5)
-}
+} */
 
 .btn-primary:disabled,
 .btn-primary.disabled {

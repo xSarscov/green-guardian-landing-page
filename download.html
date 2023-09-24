@@ -40,7 +40,7 @@
     <!-- Spinner End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 ">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h1 class="m-0">Green Guardian</h1>
         </a>
@@ -48,11 +48,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+            <div class="navbar-nav ms-auto p-3 ">
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
                 <a href="about.html" class="nav-item nav-link">Acerca</a>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                <a href="download.html" class="nav-item nav-link">Descargar</a>
+                <a href="download.html" class="nav-item nav-link active bg-white btn btn-primary rounded-pill px-3 animated slideInRight">Descargar</a>
+                
             </div>
         </div>
     </nav>
@@ -65,35 +66,154 @@
             <h1 class="display-3 text-white mb-4 animated slideInDown">Descargar</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Descargar</li>
+                    <li class="breadcrumb-item fw-medium"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active fw-medium" aria-current="page">Descargar</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
+    
+    <!-- Features Start -->
+    <div class="container-fluid video" style="margin-top: 6rem; margin-bottom: 6rem;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="py-5">
+                        <h1 class="display-6 mb-4">Descarga <span class="text-white">Green</span> <span class="text-white">Guardian</span></h1>
+                        <h2 class="fw-normal lh-base text-white mb-5 fs-5">Requisitos mínimos para usar Green Guardian en tu equipo:</h2>
+                        <div class="row g-4 mb-5">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-white text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-white">Sistema operativo: Windows 10 o posterior.</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-white text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-white">Procesador: Un procesador compatible con x86 o x64 a 1 GHz o más rápido.</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-white text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-white">Memoria: Se recomienda un mínimo de 2 GB de RAM.</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-white text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-white">Espacio en disco: Al menos 4 GB de espacio libre en el disco duro.</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-white text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-white">Tarjeta gráfica compatible con DirectX 9 o posterior con un controlador WDDM 1.0</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <a class="btn btn-secondary rounded-pill py-3 px-5" href="">Descargar</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/0BbBzsnb6po" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video End -->
 
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Video Demo</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 service">
         <div class="container">
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="section-title bg-white text-center text-primary px-3">Nuestros servicios</p>
-                <h1 class="mb-5">Servicios que ofrecemos a agricultores</h1>
+                <p class="section-title bg-gray text-center text-primary px-3">Nuestros servicios</p>
+                <h1 class="mb-5">¿Por qué Green Guardian?</h1>
             </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5">
+                            <h2 class="mb-3 fs-5"> Precio Justo & Accesible</h2>
+                                <p class="mb-4">Green Guardian es un sistema inteligente de cuidado de cultivos basado en la tecnología Arduino, lo que garantiza una combinación de calidad de material y accesibilidad de precio. Con un precio base de , Green Guardian es una solución asequible para agricultores de todos los tamaños.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5">
+                            <h2 class="mb-3 fs-5">Facilidad de Uso & Sencillez</h2>
+                            <p class="mb-4">Nuestra plataforma utiliza tecnología de vanguardia para una interfaz amigable en el software de control (HMI) y visualización en tiempo real a través de la web. La instalación del hardware es fácil: seleccione sus cultivos y Green Guardian recopilará los datos que necesita.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5">
+                            <h2 class="mb-3 fs-5"> Comodidad & Ahorro de Tiempo</h2>
+                            <p class="mb-4">Green Guardian simplifica la vida del agricultor con monitoreo constante de las necesidades del cultivo que brinda resultados tangibles datos cuantificables, beneficios demostrables y ahorra tiempo y esfuerzo, maximizando la eficiencia de sus operaciones agrícolas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row gy-5 gx-4">
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
                         </div>
-                        <div class="service-text p-5 pt-0">
-                            <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/service-1.jpg" alt="">
-                            </div>
-                            <h5 class="mb-3">Best Animal Selection</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        <div class="service-text p-5">
+                            <h2 class="mb-3 fs-5">Garantía & Soporte Confiable </h2>
+                                <p class="mb-4"> Respaldamos la calidad de Green Guardian con garantías sólidas. Además, nuestro equipo de soporte está disponible para ayudarlo en cualquier momento. Su satisfacción y éxito son nuestra prioridad, y estamos comprometidos en garantizar que su experiencia con nosotros sea beneficiosa para su negocio.
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -102,28 +222,21 @@
                         <div class="service-img">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
                         </div>
-                        <div class="service-text p-5 pt-0">
-                            <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
-                            </div>
-                            <h5 class="mb-3">Breeding & Veterinary</h5>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        <div class="service-text p-5">
+                            <h2 class="mb-3 fs-5">Impacto Ambiental Positivo</h2>
+                            <p class="mb-4">Green Guardian no solo beneficia a los agricultores, sino también al medio ambienteñ. Nuestra plataforma promueve prácticas agrícolas sostenibles y una gestión eficiente de los recursos naturales. En regiones del país con recursos limitados como el agua, Green Guardian brilla al ofrecer una gestión prudente de estos recursos.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
                         </div>
-                        <div class="service-text p-5 pt-0">
-                            <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/service-3.jpg" alt="">
-                            </div>
-                            <h5 class="mb-3">Care & Milking</h5>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        <div class="service-text p-5">
+                            <h2 class="mb-3 fs-5">Constante Evolución</h2>
+                            <p class="mb-4">Green Guardian nunca se detiene. Estamos comprometidos con la innovación constante y mantenemos nuestra plataforma siempre actualizada para brindar a nuestros usuarios las últimas innovaciones tecnológicas, adaptarnos a los cambios climáticos en tiempo real y maximizar su éxito en la agricultura.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -133,116 +246,67 @@
     <!-- Service End -->
 
 
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="section-title bg-white text-start text-primary pe-3">Por qué nosotros!</p>
-                    <h1 class="mb-4">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Justo magna erat amet</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Clita erat ipsum et lorem et sit</p>
-                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Descargar</a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="rounded overflow-hidden">
-                        <div class="row g-0">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="text-center bg-primary py-5 px-4">
-                                    <img class="img-fluid mb-4" src="img/experience.png" alt="">
-                                    <h1 class="display-6 text-white" data-toggle="counter-up">25</h1>
-                                    <span class="fs-5 fw-semi-bold text-secondary">Years Experience</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="text-center bg-secondary py-5 px-4">
-                                    <img class="img-fluid mb-4" src="img/award.png" alt="">
-                                    <h1 class="display-6" data-toggle="counter-up">183</h1>
-                                    <span class="fs-5 fw-semi-bold text-primary">Award Winning</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="text-center bg-secondary py-5 px-4">
-                                    <img class="img-fluid mb-4" src="img/animal.png" alt="">
-                                    <h1 class="display-6" data-toggle="counter-up">2619</h1>
-                                    <span class="fs-5 fw-semi-bold text-primary">Total Animals</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                <div class="text-center bg-primary py-5 px-4">
-                                    <img class="img-fluid mb-4" src="img/client.png" alt="">
-                                    <h1 class="display-6 text-white" data-toggle="counter-up">51940</h1>
-                                    <span class="fs-5 fw-semi-bold text-secondary">Happy Clients</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5 justify-content-center">
-                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                    <h5 class="text-white mb-4">Green Guardian</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>UNI, Nicaragua, Managua</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-3 justify-content-center">
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+    <footer>
+        <!-- Footer Start -->
+        <div class="container-fluid bg-white footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                        <h5 class="text-dark mb-4">Green Guardian</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>UNI, Nicaragua, Managua</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-3 justify-content-center">
+                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-start">
+                        <h5 class="text-dark mb-4">Enlaces rápidos</h5>
+                        <a class="btn btn-link" href="">Acerca de nosotros</a>
+                        <a class="btn btn-link" href="">Contáctanos</a>
+                        <a class="btn btn-link" href="">Descargar</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                        <!-- <h5 class="text-white mb-4">Business Hours</h5>
+                        <p class="mb-1">Monday - Friday</p>
+                        <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                        <p class="mb-1">Saturday</p>
+                        <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                        <p class="mb-1">Sunday</p>
+                        <h6 class="text-light">Closed</h6> -->
+                        <img src="/img/gg-logo.png" alt="gg logo">
+                    </div>
+                    
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-start">
-                    <h5 class="text-white mb-4">Enlaces rápidos</h5>
-                    <a class="btn btn-link" href="">Acerca de nosotros</a>
-                    <a class="btn btn-link" href="">Contáctanos</a>
-                    <a class="btn btn-link" href="">Descargar</a>
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                    <!-- <h5 class="text-white mb-4">Business Hours</h5>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6> -->
-                    <img src="/img/gg-logo.png" alt="gg logo">
-                </div>
-                
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid bg-secondary text-body copyright py-4">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center text-md-center mb-3 mb-md-0">
-                    &copy; <a class="fw-semi-bold" href="#">Hyperion</a>, All Right Reserved.
+        <!-- Footer End -->
+    
+    
+        <!-- Copyright Start -->
+        <div class="container-fluid bg-white text-dark copyright py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center text-md-center mb-3 mb-md-0">
+                        &copy; <a class="fw-bold" href="#">Hyperion</a>, All rights reserved.
+                    </div>
+                    <!-- <div class="col-md-6 text-center text-md-end">
+                        /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/
+                        Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
+                    </div> -->
                 </div>
-                <!-- <div class="col-md-6 text-center text-md-end">
-                    /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/
-                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
-                </div> -->
             </div>
         </div>
-    </div>
-    <!-- Copyright End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <!-- Copyright End -->
+    
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </footer>
 
 
     <!-- JavaScript Libraries -->
