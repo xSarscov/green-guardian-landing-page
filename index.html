@@ -31,6 +31,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Reset Template Stylesheet -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    
 </head>
 
 <body>
@@ -38,26 +42,33 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0">Green Guardian</h1>
+            <p class="m-0 fs-1 fw-bold">Green Guardian</p>
         </a>
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Abrir el menú de navegación">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Ícono de menú de hamburguesa</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-3 ">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">Acerca</a>
-                <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                <a href="download.html" class="nav-item nav-link btn btn-primary rounded-pill px-3 animated slideInRight">Descargar</a>
-                
+            <div class="navbar-nav ms-auto p-3">
+                <a href="index.html" class="nav-item nav-link active" aria-labelledby="inicio-label">Inicio</a>
+                <a href="about.html" class="nav-item nav-link" aria-labelledby="acerca-label">Acerca</a>
+                <a href="contact.html" class="nav-item nav-link" aria-labelledby="contacto-label">Contacto</a>
+                <a href="download.html" class="nav-item nav-link btn btn-primary rounded-pill px-3 animated slideInRight" aria-labelledby="descargar-label">Descargar</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
+    <!-- Elementos span para etiquetas descriptivas -->
+    <span id="inicio-label" style="display: none;">Página de inicio de Green Guardian</span>
+    <span id="acerca-label" style="display: none;">Acerca de Green Guardian</span>
+    <span id="contacto-label" style="display: none;">Información de contacto de Green Guardian</span>
+    <span id="descargar-label" style="display: none;">Descargar el software de Green Guardian</span>
+
+
     <main>
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="true">
             <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
         </div>
         <!-- Spinner End -->
@@ -75,8 +86,13 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-8 text-center">
                                         <p class="fs-4 text-white">Bienvenidos</p>
-                                        <p class="display-1 text-white mb-5 animated slideInRight">Cultivando un futuro sostenible</p>
-                                        <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Descargar aquí<i class="bi bi-download"></i></a>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">Cultivando un futuro sostenible</h1>
+                                        <a href="download.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight" aria-label="Descargar el software de Green Guardian">Descargar aquí<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                            <title>Descargar el software de Green Guardian</title>
+                                            <desc>Icono de descarga para obtener el software de Green Guardian.</desc>
+                                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                          </svg></a>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +106,12 @@
                                     <div class="col-lg-8 text-center">
                                         <p class="fs-4 text-white">Creado por Hyperion</p>
                                         <p class="display-1 text-white mb-5 animated slideInRight">Deja tus productos en buenas manos</p>
-                                        <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Descargar aquí<i class="bi bi-download"></i></a>
+                                        <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft" aria-label="Descargar el software de Green Guardian">Descargar aquí<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                            <title>Descargar el software de Green Guardian</title>
+                                            <desc>Icono de descarga para obtener el software de Green Guardian.</desc>
+                                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                          </svg></a>
                                     </div>
                                 </div>
                             </div>
@@ -99,14 +120,14 @@
                 </div>
                 <div class="carousel-control-container">
                     <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                        data-bs-slide="prev">
+                        data-bs-slide="prev" aria-label="Botón para deslizar a la imagen anterior del carousel">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="visually-hidden">Atrás</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                        data-bs-slide="next">
+                        data-bs-slide="next" aria-label="Botón para deslizar a la imagen siguiente del carousel">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span class="visually-hidden">Siguiente</span>
                     </button>
                 </div>
             </div>
@@ -129,16 +150,16 @@
                                 <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/about-2.jpg" alt="">
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                         
                         <p class="bg-white text-start text-primary pe-3 fw-medium text-uppercase">Acerca de nosotros</p>
-                        <h1 class="mb-4 fs-1">Conoce acerca de Green Guardian</h1>
-                        <div class="separator"></div>
-                        <h2>Bienvenido a Green Guardian</h2>
+                        <h2 class="mb-4 fs-1">Conoce acerca de Green Guardian</h2>
+                        <div class="separator" role="separator"></div>
+                        <h3>Bienvenido a Green Guardian</h3>
                         <p class="mb-4">Un innovador proyecto que está revolucionando la agricultura sostenible. <b>Green Guardian</b> es un sistema invernadero de vanguardia gestionado y monitoreado desde una potente aplicación de escritorio desarrollada en <b>Windows Forms .NET</b>. Lo que lo hace aún más especial es su integración con dispositivos <b>Arduino</b> que recopilan y envían información en tiempo real a la aplicación de escritorio.</p>
-                        <div class="border-top mb-4"></div>
-                        <h2>Con Green Guardian</h2>
+                        <div class="border-top mb-4" role="separator"></div>
+                        <h3>Con Green Guardian</h3>
                         <p class="mb-4">Puedes controlar tus cultivos de manera más inteligente y eficiente, ajustando parámetros cruciales como <b>la temperatura, la humedad y la iluminación</b> directamente desde tu escritorio. Además, nuestra aplicación te permite supervisar el consumo de recursos naturales, como <b>el agua y la energía</b>, para una gestión más responsable y eficaz. ¡Descubre cómo Green Guardian puede transformar tu forma de cultivar hoy mismo!</p>
                         
                     </div>
@@ -153,37 +174,37 @@
             <div class="container py-5">
                 <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                     <p class="fw-medium text-uppercase bg-gray text-center text-primary px-3">Nuestro producto</p>
-                    <h1 class="display-6">¿Qué es Green Guardian?</h1>
-                    <div class="separator"></div>
+                    <h2 class="display-6">¿Qué es Green Guardian?</h2>
+                    <div class="separator" role="separator"></div>
                 </div>
                 <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
                     <a href="" class="d-block product-item rounded">
                         <img src="img/product-1.jpg" alt="">
                         <div class="bg-white shadow-sm text-center p-4 position-relative mt-n6">
-                            <h4 class="text-primary">Green Guardian</h4>
+                            <h3 class="text-primary fs-4">Green Guardian</h3>
                             <p class="text-dark text-start">Es una plataforma inteligente basada en un conjunto de actuadores y sensores de última generación que trabajan en conjunto para recopilar datos precisos y valiosos del entorno de cultivos.
                             </p>
                         </div>
                     </a>
-                    <a href="" class="d-block product-item rounded">
+                    <a href="" class="d-block product-item rounded" aria-label="Más información sobre el monitoreo en tiempo real con Green Guardian">
                         <img src="img/product-2.jpg" alt="">
                         <div class="bg-white shadow-sm text-center p-4 position-relative mt-n6">
-                            <h4 class="text-primary">Monitoreo en tiempo real</h4>
+                            <h3 class="text-primary fs-4">Monitoreo en tiempo real</h3>
                             <p class="text-dark text-start">Una de las características clave de Green Guardian es su capacidad para monitorear de manera precisa y constante las variables críticas que afectan el crecimiento y la salud de los cultivos.</p>
                         </div>
                     </a>
-                    <a href="" class="d-block product-item rounded">
+                    <a href="" class="d-block product-item rounded" aria-label="Más información sobre el Control agrícola con Green Guardian">
                         <img src="img/product-3.jpg" alt="">
                         <div class="bg-white shadow-sm text-center p-4 position-relative mt-n6">
-                            <h4 class="text-primary">Control agrícola</h4>
+                            <h3 class="text-primary fs-4">Control agrícola</h3>
                             <p class="text-dark text-start">Ofrece una interfaz de usuario intuitiva para el control en tiempo real y la visualización de datos, facilitando la supervisión y gestión eficaz de sus cultivos, brindando un mayor control sobre recursos y producción.
                             </p>
                         </div>
                     </a>
-                    <a href="" class="d-block product-item rounded">
+                    <a href="" class="d-block product-item rounded" aria-label="Más información sobre cómo Green Guardian mejora la eficiencia de las operaciones agrícolas">
                         <img src="img/product-4.jpg" alt="">
                         <div class="bg-white shadow-sm text-center p-4 position-relative mt-n6">
-                            <h4 class="text-primary">Una herramienta esencial</h4>
+                            <h3 class="text-primary fs-4">Una herramienta esencial</h3>
                             <p class="text-dark text-start">Nuestra plataforma está diseñada para mejorar la eficiencia, la sostenibilidad y la rentabilidad de las operaciones agrícolas al proporcionar datos en tiempo real y medidas prácticas para el éxito de los cultivos.
                             </p>
                         </div>
@@ -202,8 +223,8 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <p class="bg-white fw-medium text-uppercase text-start text-primary pe-3">Nuestro público</p>
-                    <h1 class="display-6">Nuestro compromiso con el sector agropecuario</h1>
-                    <div class="separator"></div>
+                    <h2 class="display-6">Nuestro compromiso con el sector agropecuario</h2>
+                    <div class="separator" role="separator"></div>
                     <p class="mb-4">Nuestro proyecto tiene como objetivo beneficiar al sector agropecuario en su totalidad, desde pequeños agricultores hasta grandes productores, reconociendo su importancia en la economía nacional. Nos comprometemos a proporcionar apoyo tecnológico para mejorar la productividad y sostenibilidad, garantizando que estas innovaciones estén al alcance de todos, sin importar la escala de producción.</p>
                     <p class="mb-4"> Creemos que al empoderar a los agricultores con herramientas tecnológicas, contribuiremos al crecimiento económico y la resiliencia del sector frente a desafíos climáticos y económicos, asegurando un futuro próspero para esta industria vital.</p>
                 </div>
@@ -217,26 +238,26 @@
         <div class="container py-5">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="text-white text-center px-3 bg-green fw-medium text-uppercase">Testimonios</p>
-                <h1 class="display-6 text-dark ">¿Qué dice la gente acerca de Green Guardian?</h1>
-                <div class="separator"></div>
+                <h2 class="display-6 text-dark ">¿Qué dice la gente acerca de Green Guardian?</h2>
+                <div class="separator" role="separator"></div>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <div class="testimonial-item p-4 p-lg-5">
+                <article class="testimonial-item p-4 p-lg-5">
                     <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" alt="Foto de Client Name">
                         <div class="text-start ms-3">
-                            <h5>Client Name</h5>
+                            <h3>Client Name</h3>
                             <span class="text-primary">Profession</span>
                         </div>
                     </div>
-                </div>
+                </article>
                 <div class="testimonial-item p-4 p-lg-5">
                     <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
                     <div class="d-flex align-items-center justify-content-center">
                         <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" alt="">
                         <div class="text-start ms-3">
-                            <h5>Client Name</h5>
+                            <h3>Client Name</h3>
                             <span class="text-primary">Profession</span>
                         </div>
                     </div>
@@ -246,7 +267,7 @@
                     <div class="d-flex align-items-center justify-content-center">
                         <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" alt="">
                         <div class="text-start ms-3">
-                            <h5>Client Name</h5>
+                            <h3>Client Name</h3>
                             <span class="text-primary">Profession</span>
                         </div>
                     </div>
@@ -259,13 +280,18 @@
     <div class="container-xxl download py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6">¡Descarga Green Guardian Ahora!</h1>
+                <h2 class="display-6">¡Descarga Green Guardian Ahora!</h2>
             </div>
             <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-8 text-center">
-                    <div class="separator"></div>
+                    <div class="separator" role="separator"></div>
                     <p class="fs-5 my-5"> Potencia tus operaciones agrícolas con Green Guardian. Obtén tu copia gratuita y descubre cómo optimizar tus cultivos para una mayor eficiencia y sostenibilidad. ¡No esperes más para impulsar tu éxito agrícola!</p>
-                    <a href="" class="btn btn-secondary rounded-pill my-3 py-3 px-5 animated slideInRight">Descargar aquí<i class="bi bi-download"></i></a>
+                    <a href="" class="btn btn-secondary rounded-pill my-3 py-3 px-5 animated slideInRight" aria-label="Descargar el software de Green Guardian">Descargar aquí<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <title>Descargar el software de Green Guardian</title>
+                        <desc>Icono de descarga para obtener el software de Green Guardian.</desc>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                      </svg></a>
                 </div>
             </div>
         </div>
@@ -278,30 +304,41 @@
         <div class="container py-5">
             <div class="row g-5 justify-content-center">
                 <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                    <h5 class="text-dark mb-4">Green Guardian</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>UNI, Nicaragua, Managua</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <h2 class="text-dark mb-4">Green Guardian</h2>
+                    <p class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <title>Dirección de la UNI en Managua, Nicaragua</title>
+                        <desc>Ubicación de la UNI en Managua, Nicaragua</desc>
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>    UNI, Nicaragua, Managua</p>
+                    <p class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <title>Correo Electrónico de Contacto</title>
+                        <desc>Correo electrónico de contacto</desc>
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>    info@example.com</p>
                     <div class="d-flex pt-3 justify-content-center">
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" aria-label="Ir al perfil de Instagram de Green Guardian" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <title>Instagram</title>
+                            <desc>Ícono de Instagram</desc>
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" aria-label="Ir al perfil de Facebook de Green Guardian" href=""><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <title>Facebook</title>
+                            <desc>Ícono de Facebook</desc>
+                            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" aria-label="Ir al perfil de GitHub de Green Guardian" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <title>GitHub</title>
+                            <desc>Ícono de GitHub</desc>
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-start">
-                    <h5 class="text-dark mb-4">Enlaces rápidos</h5>
-                    <a class="btn btn-link" href="">Acerca de nosotros</a>
-                    <a class="btn btn-link" href="">Contáctanos</a>
-                    <a class="btn btn-link" href="">Descargar</a>
+                    <h2 class="text-dark mb-4">Enlaces rápidos</h2>
+                            <a href="#" class="btn btn-link" aria-label="Acerca de nosotros">Acerca de nosotros</a>
+                            <a href="#" class="btn btn-link" aria-label="Contáctanos">Contáctanos</a>
+                            <a href="#" class="btn btn-link" aria-label="Descargar">Descargar</a>
                 </div>
+                
                 <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                    <!-- <h5 class="text-white mb-4">Business Hours</h5>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6> -->
                     <img src="/img/gg-logo.png" alt="gg logo">
                 </div>
                 
@@ -318,10 +355,6 @@
                 <div class="col-md-6 text-center text-md-center mb-3 mb-md-0">
                     &copy; <a class="fw-bold" href="#">Hyperion</a>, All rights reserved.
                 </div>
-                <!-- <div class="col-md-6 text-center text-md-end">
-                    /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/
-                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
-                </div> -->
             </div>
         </div>
     </div>
