@@ -664,3 +664,19 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
+
+.login {
+    background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(../img/testimonial-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+.form-img {
+    height: 350px;
+    width: 350px;
+    border-radius: 60px;
+    
+}
