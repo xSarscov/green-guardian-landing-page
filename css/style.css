@@ -101,7 +101,7 @@
     margin-right: 30px;
     padding: 10px 0;
     color: var(--dark);
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     outline: none;
 }
@@ -123,13 +123,16 @@
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
+        padding: 12px 0;
     }
 
     .navbar-collapse {
         border-top: 1px solid #DDDDDD;
+        margin-left: 0 !important;
+
     }
+    
+
 }
 
 @media (min-width: 992px) {
@@ -149,16 +152,30 @@
         transition: .5s;
         opacity: 1;
     }
-    
+
     .navbar-collapse {
         border-top: 1px solid #DDDDDD;
     }
+
+    
+
 }
 
 @media (min-width: 1075px) {
     .navbar-collapse {
         border-top: none;
+
     }
+}
+
+@media (max-width: 1075px) {
+
+    .navbar-nav {
+        margin-left: 0 !important;
+
+    }
+    
+    
 }
 
 
