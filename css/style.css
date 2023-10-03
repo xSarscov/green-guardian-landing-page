@@ -87,6 +87,11 @@
 }
 
 /*** Navbar ***/
+.logo {
+    height: 60px;
+    width: 150px;
+}
+
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
@@ -137,18 +142,25 @@
         visibility: hidden;
         transition: .5s;
     }
-
+    
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
         transition: .5s;
         opacity: 1;
     }
-
+    
     .navbar-collapse {
         border-top: 1px solid #DDDDDD;
     }
 }
+
+@media (min-width: 1075px) {
+    .navbar-collapse {
+        border-top: none;
+    }
+}
+
 
 
 
@@ -679,4 +691,13 @@
     width: 350px;
     border-radius: 60px;
     
+}
+
+.carousel-logo {
+    height: 355px;
+    width: 355px;
+    object-fit: contain;
+    object-position: 100% 20%;
+    background-color: #EDDD5E;
+    padding: 15px;
 }
